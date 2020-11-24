@@ -23,7 +23,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mate&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Rasa:wght@500&display=swap');
+
 
 tw-story {
 	font-family: "Nanum Gothic Coding", "Arial";
@@ -149,7 +154,7 @@ tw-alert {
 			(stop:)
 		]
 	]
-}</tw-passagedata><tw-passagedata pid="2" name="Cat on a fence" tags="" position="2569,179" size="100,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:56%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/CEqagLI1QmnYI&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="Human sitting on a fence" tags="" position="2755,324" size="100,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:56%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/bDSP5Pz1NX0wXWZqsU&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Greyhound jumps the fence " tags="" position="2724,42" size="100,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:109%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/kBWJCqn4SvswE&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Turkey" tags="" position="2724,183" size="100,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:70%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/l2SpOWHJuTS4DaWLm&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Take a look around" tags="body" position="2745,960" size="100,100">(if: $wakeup is 0)[Hmmmm, it looks like there are 4 different fields around this fence and a bunch others further away.
+}</tw-passagedata><tw-passagedata pid="2" name="Cat on a fence" tags="" position="2569,179" size="100,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:56%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/CEqagLI1QmnYI&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="3" name="Human sitting on a fence" tags="" position="2755,324" size="100,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:56%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/bDSP5Pz1NX0wXWZqsU&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="4" name="Greyhound jumps the fence " tags="" position="2724,42" size="100,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:109%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/kBWJCqn4SvswE&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="5" name="Turkey" tags="" position="2724,183" size="100,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:70%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/l2SpOWHJuTS4DaWLm&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="6" name="Take a look around" tags="body" position="2745,960" size="100,100">(if: $wakeup is 0)[Hmmmm, it looks like there are 4 different fields around this fence and a bunch others beyond them.
 They&#39;ve all got signs in them, but they&#39;re too far away to read.
 You //think// you can see paths leading out from the far edges of the fields. Maybe they&#39;ll offer you a way off this fence... (set: $wakeup to 1)(set: $field to 0)
 
@@ -353,11 +358,16 @@ That reminds me of something I heard once:
 |sample2)[(transition: &quot;dissolve&quot;)+(transition-time:2s)[For the sake of argument let&#39;s say it is.]]
 |sample3)[(transition: &quot;dissolve&quot;)+(transition-time: 2s)[But then, what is knowledge? ]]
 
-|sample4)[(transition: &quot;dissolve&quot;)+(transition-time: 2s)[According to Plato, knowledge is:
+|sample4)[(transition: &quot;dissolve&quot;)+(transition-time: 2s)[According to Plato, knowledge is: **justified true belief**
 
-(justified true belief gif)]]
+&lt;img width=60% src =&quot;https://ohcaresearch.files.wordpress.com/2018/11/jtb.png?w=796&amp;h=772&quot;&gt;]]
 |sample5)[(transition: &quot;dissolve&quot;)+(transition-time: 2s)[   ]]
-|sample6)[(transition: &quot;dissolve&quot;)+(transition-time: 2s)[So, in order for something to be knowledge, it must be //justified//, it must be //true//, and you must believe it.]]
+|sample6)[(transition: &quot;dissolve&quot;)+(transition-time: 2s)[In order for something to be knowledge, it must be:
+	- //justified// (you cannot &#39;know&#39; something unless you have reason for thinking it&#39;s true and not just a lucky guess);
+	
+	- //true// (you cannot &#39;know&#39; something that is false, e.g. &#39;I knew that Trump would get re-elected&#39;);
+	
+	- you must //believe// it (you cannot &#39;know&#39; what you don&#39;t believe).]]
 |sample7)[(transition: &quot;dissolve&quot;)+(transition-time: 1s)[   ]]
 |sample8)[(transition: &quot;dissolve&quot;)+(transition-time: 2s)[[[Cool, alright - I&#39;ll go with that-&gt;Knowledge 3]]]]
 {
@@ -635,7 +645,7 @@ What sort of knowledge would that give us?**][(click:&quot;What sort of knowledg
 	]
 	}</tw-passagedata><tw-passagedata pid="38" name="Journalism" tags="constructivism" position="3093.3333333333344,1456" size="100,100">(set: $journalism to 1)When you get down to it, [(link-reveal:&quot;isn&#39;t this really just &#39;journalism?&#39;&quot;)[(show: ?more2)]]
 
-|more2)[(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Noto serif&quot;)[**What is &#39;journalism&#39;?**][(click:&quot;What is &#39;journalism&#39;?&quot;)[(show: ?more3)]]]
+|more2)[(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Nunito&quot;)[**What is &#39;journalism&#39;?**][(click:&quot;What is &#39;journalism&#39;?&quot;)[(show: ?more3)]]]
 
 |more3)[(link-reveal:&quot;Ehm... making stuff up and writing about it articulately?&quot;)[(show: ?more4)]]
 
@@ -707,7 +717,7 @@ Thanks for the tour but [[this field is not for me! -&gt;Take a look around]] </
 
 |more1)[(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Neucha&quot;)[**We&#39;re analysing data**]]
 |more1)[(align:&quot;=&gt;&lt;==&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Quattrocento&quot;)[**We&#39;re doing research**]]
-|more1)[(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Noto serif&quot;)[**We&#39;re creating knowledge**]]
+|more1)[(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Nunito&quot;)[**We&#39;re creating knowledge**]]
 
 |more1)[(link-reveal:&quot;Cool, how are you creating knowledge?&quot;)[(show: ?more3)]]
 
@@ -721,7 +731,7 @@ Thanks for the tour but [[this field is not for me! -&gt;Take a look around]] </
 
 |more5)[(align:&quot;==&gt;&quot;)[They stare at you.]]
 
-|more5)[(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Noto serif&quot;)[**What else should it be about?**]]
+|more5)[(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Nunito&quot;)[**What else should it be about?**]]
 
 |more5)[(link-reveal:&quot;I dunno. The world?&quot;)[(show: ?more7)]]
 
@@ -746,7 +756,7 @@ Thanks for the tour but [[this field is not for me! -&gt;Take a look around]] </
 
 |more1)[(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Neucha&quot;)[**Well, yeah!**]]
 |more1)[(align:&quot;=&gt;&lt;==&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Quattrocento&quot;)[**Sorry**]]
-|more1)[(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Noto serif&quot;)[**We thought you knew**]]
+|more1)[(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Nunito&quot;)[**We thought you knew**]]
 
 |more2)[ ]
 |more3)[ ]
@@ -759,7 +769,7 @@ The researchers don&#39;t seem particularly bothered.
 [(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Quattrocento&quot;)[**We ask our participants if we&#39;ve got it right - if they think we&#39;ve accurately represented their social reality - their truth**]]
 (link-reveal:&quot;&#39;Their truth&#39;?? But what about &#39;objective truth&#39;?&quot;)[(show: ?more1)]
 
-|more1)[(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Noto serif&quot;)[**What about it?**]]
+|more1)[(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Nunito&quot;)[**What about it?**]]
 |more2)[ ]
 |more3)[ ] 
 |more1)[{(live: 1s)[(replace: ?more2)+(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Neucha&quot;)[We study the social world, not natural science. Find me an objective truth in the social world]]
@@ -767,9 +777,9 @@ The researchers don&#39;t seem particularly bothered.
 |more1)[{(live: 4s)[(replace: ?more3)[Alright, teaching anglophone childern to read English. Lots of studies show that using phonics rather than they whole word system produces kids who are better readers. (link-reveal:&quot;There&#39;s an &#39;objective truth&#39;!&quot;)[(show: ?more4)]]] (stop:)}]
 |more4)[(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Neucha&quot;)[**Ok, and that&#39;s great. But what is that research actually telling us?**]]
 |more4)[(align:&quot;=&gt;&lt;==&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Quattrocento&quot;)[**The kids might be &#39;better&#39; readers but it doesn&#39;t tell us //how// or //why//.**]]
-|more4)[(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family:Noto serif&quot;)[**(And //is// it even telling us that? Think of all the variables in a classroom - could you //really// isolate out everything else?)**]]
+|more4)[(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family:Nunito&quot;)[**(And //is// it even telling us that? Think of all the variables in a classroom - could you //really// isolate out everything else?)**]]
 |more4)[(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Neucha&quot;)[**It doesn&#39;t tell us anything about their attitudes towards reading and whether they value this skill**]]
-|more4)[(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Noto serif&quot;)[**It doesn&#39;t tell us anything about their perspectives on this topic at all**]]
+|more4)[(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Nunito&quot;)[**It doesn&#39;t tell us anything about their perspectives on this topic at all**]]
 |more5)[ ]
 
 |more4)[{(live: 5s)[(replace: ?more5)[[[Well... does that matter?-&gt;const1.4]]]] (stop:)}]
@@ -777,15 +787,15 @@ The researchers don&#39;t seem particularly bothered.
 
 Now the researchers seem bothered.
 
-[(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Noto serif&quot;)[**Do we think it matters that the perspecitives of participants are at the centre of research that is exploring their social world?**]]
+[(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Nunito&quot;)[**Do we think it matters that the perspecitives of participants are at the centre of research that is exploring their social world?**]]
 [(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Neucha&quot;)[**The answer is yes, yes we do**]]
 [(align:&quot;=&gt;&lt;==&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Quattrocento&quot;)[**We think it&#39;s very important**]]
 [(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Neucha&quot;)[**We weren&#39;t exaggerating when we said we create knowledge**]]
 [(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Quattrocento&quot;)[**The knowledge our research produces only exists because of the process we do with participants. The knowledge is //constructed// as part of a dialogue between us. It doesn&#39;t exist without both parties.**]]
 [(align:&quot;=&gt;&lt;==&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Neucha&quot;)[**We are seeking to capture the truthful understanding of our participants&#39; experiences. You can only do this by working together. **]]
-[(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Noto serif&quot;)[**Our knowledge starts with understanding the social realities of our participants**]]
+[(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Nunito&quot;)[**Our knowledge starts with understanding the social realities of our participants**]]
 
-[[Wow, I see your point-&gt;const1.5]]</tw-passagedata><tw-passagedata pid="58" name="const1.5" tags="constructivism" position="3199.3333333333326,1251.6666666666667" size="100,100">I&#39;d never really thought about social research like that. (Set: $consround to 1)
+[[Wow, I see your point-&gt;const1.5]]</tw-passagedata><tw-passagedata pid="58" name="const1.5" tags="constructivism" position="3199.3333333333326,1251.6666666666667" size="100,100">I&#39;d never really thought about social research like that. (Set: $consround to 1)(set: $journalism to 0)
 
 [[And now that I have it just makes so much sense!]]
 
