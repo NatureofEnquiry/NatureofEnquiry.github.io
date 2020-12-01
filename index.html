@@ -29,6 +29,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Rasa:wght@500&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+
 
 tw-story {
 	font-family: "Nanum Gothic Coding", "Arial";
@@ -225,8 +227,6 @@ You //think// you can see paths leading out from the far edges of the fields. Ma
 
 
 
-
-
 Oh look, there&#39;s a Cat hanging out down here. Hello Cat.(click: &quot;Hello Cat&quot;)[(alert:&quot;Cat says: &#39;Hi, I built this. I hope you&#39;re enjoying it. If you&#39;re not then it&#39;s probably John&#39;s fault.
 Reckon there&#39;re things here that could do with a bit of tweaking? You might be right. Drop me an email at s1798776@ed.ac.uk
 If you convince me I may even change them.&#39; &quot;)] 
@@ -256,11 +256,11 @@ If you convince me I may even change them.&#39; &quot;)]
 (live: 12s)[
 	(replace: ?more4)+(transition: &quot;dissolve&quot;)+(transition-time: 3s)+(css: &quot;font-size: 140%;&quot;)+(align: &quot;=&gt;&lt;=&quot;)[[[Welcome to Positivism!-&gt;pos1.1]]]]
 	(stop:)
-	}]</tw-passagedata><tw-passagedata pid="4" name="Go take a look at the second field" tags="constructivism" position="3495.3333333333335,1004.3333333333334" size="100,100">(if: $field2 is 1)[You&#39;re back in constructivism!
+	}]</tw-passagedata><tw-passagedata pid="4" name="Go take a look at the second field" tags="constructivism" position="3483.666666666667,956" size="100,100">(if: $field2 is 1)[You&#39;re back in constructivism!
 
 [[Yes, I&#39;m back and I want to remind myself how this all works-&gt;const1.1]]
 
-[[Yes, this is my spiritual home and where I want to be. Take me I&#39;m yours constructivism-&gt;constending]]
+[[Yes, this is my spiritual home and where I want to be. Take me I&#39;m yours constructivism-&gt;constending1]]
 
 [[Whoops, wrong field! Take me back to the fence-&gt;Take a look around]]] (else:)[(set: $field2 to 1)|more1&gt;[]
 
@@ -280,9 +280,9 @@ If you convince me I may even change them.&#39; &quot;)]
 	(replace: ?more3)[You finally get to the sign:]]
 	(stop:)
 (live: 12s)[
-	(replace: ?more4)+(transition: &quot;dissolve&quot;)+(transition-time: 3s)+(css: &quot;font-size: 140%;&quot;)+(align: &quot;=&gt;&lt;=&quot;)[[[You are now entering: CONSTRUCTIVISM -&gt;const1.1]]]]
+	(replace: ?more4)+(transition: &quot;dissolve&quot;)+(transition-time: 3s)+(css: &quot;font-size: 140%;&quot;)+(align: &quot;=&gt;&lt;=&quot;)[[[You are now entering: CONSTRUCTIVISM -&gt;const1.1]] ]]
 	(stop:)
-	}]</tw-passagedata><tw-passagedata pid="5" name="Go take a look at the third field" tags="crittheory" position="2884,1485" size="100,100">(if: $field3 is 1)[You&#39;re back in critical theory!
+	}]</tw-passagedata><tw-passagedata pid="5" name="Go take a look at the third field" tags="crittheory" position="3165.3333333333335,1625" size="100,100">(if: $field3 is 1)[You&#39;re back in critical theory!
 
 [[Yep and I want to go over this again - let&#39;s go!-&gt;crittheory1.1]]
 
@@ -298,13 +298,13 @@ If you convince me I may even change them.&#39; &quot;)]
 |more5&gt;[]
 
 {(live: 1s)[
-	(replace: ?more1)[Different colours!]]
+	(replace: ?more1)[Ooh, more colours!]]
 	(stop:)
 [(live: 3s)[
-	(replace: ?more2)[You start walking towards the sign. (What are the people in this field doing?)]]
+	(replace: ?more2)[You start walking towards the sign. There are people in this field but they&#39;re all a bit far away. Some look like there&#39;re talking to each other; many look like they&#39;re reading and a few seem to be writing.]]
 	(stop:)]
 (live: 7s)[
-	(replace: ?more3)[Finally you get to the sign:]]
+	(replace: ?more3)[You get to the sign:]]
 	(stop:)
 (live: 9s)[
 	(replace: ?more4)+(transition: &quot;dissolve&quot;)+(transition-time: 3s)+(css: &quot;font-size: 140%;&quot;)+(align: &quot;=&gt;&lt;=&quot;)[ [[Critical Theory:
@@ -313,7 +313,7 @@ If you convince me I may even change them.&#39; &quot;)]
 (live: 11s)[
 	(replace: ?more5)+(transition: &quot;dissolve&quot;)+(transition-time: 3s)+(align: &quot;=&gt;&lt;=&quot;)[Good question]]
 	(stop:)
-	}]</tw-passagedata><tw-passagedata pid="6" name="Go take a look at the fourth field" tags="feminism" position="2441,1405" size="100,100">(if: $field4 is 1)[You&#39;re back in feminism!
+	}]</tw-passagedata><tw-passagedata pid="6" name="Go take a look at the fourth field" tags="feminism" position="2456,1385" size="100,100">(if: $field4 is 1)[You&#39;re back in feminism!
 
 [[Yes and I just want to check I&#39;ve got this right - let&#39;s run through it again -&gt;fem1.1]]
 
@@ -332,7 +332,7 @@ If you convince me I may even change them.&#39; &quot;)]
 	(replace: ?more1)[Oooh, this is different. I like the colours.]]
 	(stop:)
 [(live: 4s)[
-	(replace: ?more2)[You start heading towards the sign. This seems to be a(if:($field3 is 1)or($field2 is 1))[nother] field where people are hanging out in groups chatting. Some of the conversations look pretty animated. You can&#39;t really tell who&#39;s leading the discussions. Everyone seems to be getting pretty involved.]
+	(replace: ?more2)[You start heading towards the sign. This seems to be a(if:($field3 is 1)or($field2 is 1))[nother] field where people are hanging out in groups chatting. Some of the conversations look pretty animated. You can&#39;t really tell who&#39;s leading the discussions; everyone seems to be getting pretty involved.]
 	(stop:)]
 (live: 10s)[
 	(replace: ?more3)[Finally you get to the sign:]]
@@ -616,7 +616,7 @@ Intellectual virtue
 
 But what if my intellectual virtues are different from yours? What if the way I apply rigour is different to yours? What if the authenticity I&#39;m striving to reflect is different from the validity you&#39;re seeking to establish? [[What then??-&gt; Knowledge 6]]</tw-passagedata><tw-passagedata pid="20" name=" Knowledge 6" tags="knowledge" position="2125,729" size="100,100">Aha, these sound like questions about how different research paradigms go about deciding whether certain practises are capable of contributing to &#39;knowledge&#39;! 
 
-[[Yes, that&#39;s basically what I just said -&gt;Knowledge 7]] </tw-passagedata><tw-passagedata pid="21" name="Knowledge 7" tags="knowledge" position="2313,714" size="100,100">Well then, [[back to the fields!-&gt;Take a look around]] </tw-passagedata><tw-passagedata pid="22" name="Untitled Passage 4" tags="" position="2537.333333333333,2159.6666666666674" size="100,100">|more1&gt;[]
+[[Yes, that&#39;s basically what I just said -&gt;Knowledge 7]] </tw-passagedata><tw-passagedata pid="21" name="Knowledge 7" tags="knowledge" position="2313,714" size="100,100">Well then, [[back to the fields!-&gt;Take a look around]] </tw-passagedata><tw-passagedata pid="22" name="Untitled Passage 4" tags="" position="2497.333333333333,2219.6666666666674" size="100,100">|more1&gt;[]
 
 |more2&gt;[]
 
@@ -652,7 +652,7 @@ What is it?&quot;)
 		]
 	]
 }
-</tw-passagedata><tw-passagedata pid="24" name="femending2" tags="" position="2531.666666666667,2477.666666666667" size="100,100">|more1&gt;[]
+</tw-passagedata><tw-passagedata pid="24" name="femending2" tags="" position="2491.666666666667,2537.666666666667" size="100,100">|more1&gt;[]
 
 |more2&gt;[]
 
@@ -673,7 +673,7 @@ What is it?&quot;)
 	(replace: ?more4)[(link-replace:&quot;Ugh, I wish I hadn&#39;t started down this path - take me back to that nice ending screen so I can leave&quot;)[(align:&quot;==&gt;&quot;)[Sure thing, [[right this way-&gt;femending final]] ]]]
 	(stop:)]
 }
-</tw-passagedata><tw-passagedata pid="25" name="femending3" tags="" position="2543.6666666666665,2627.333333333334" size="100,100">|more1&gt;[]
+</tw-passagedata><tw-passagedata pid="25" name="femending3" tags="" position="2503.6666666666665,2687.333333333334" size="100,100">|more1&gt;[]
 
 |more2&gt;[]
 
@@ -687,7 +687,7 @@ What is it?&quot;)
 (live: 6s)[
 	(replace: ?more2)[(css: &quot;color:rgb(0, 0, 255); font-size: 140%;&quot;)+(align: &quot;=&gt;&lt;=&quot;)[**[[Follow Me]]**]]
 	(stop:)]
-}</tw-passagedata><tw-passagedata pid="26" name="Follow Me" tags="" position="2548.6666666666665,2772.0000000000005" size="100,100">
+}</tw-passagedata><tw-passagedata pid="26" name="Follow Me" tags="" position="2508.6666666666665,2832.0000000000005" size="100,100">
 1. First, follow this link and click the download button on the top left. (click: &quot;follow this link&quot;)[(open-url: &quot;https://uoe-my.sharepoint.com/:u:/g/personal/s1798776_ed_ac_uk/EaneRbplPvlDnORnGJpoRiEBsI3L72viPevUAxY9dG7zpQ?e=2NeY9E&quot;)] You&#39;ll download an HTML file of this game. 
 
 
@@ -711,6 +711,12 @@ This youtube series is an excellent starting place and this one is also helpful.
 There are also a couple of Twine &#39;manuals&#39; - this is one and this is the other. (click: &quot;this is one&quot;)[(open-url: &quot;https://twinery.org/wiki/harlowe:links&quot;)]  (click: &quot;this is the other.&quot;)[(open-url: &quot;https://twine2.neocities.org/#markup_link&quot;)]  (click: &quot;youtube series&quot;)[(open-url: &quot;https://www.youtube.com/playlist?list=PLklITFhXtPCCKadv-0Gcbqoj3OCev695D&quot;)] (click: &quot;this one&quot;)[(open-url: &quot;https://www.youtube.com/playlist?list=PLFgjYYTq6xyjBtXJTvEaBTVUWxirY6q24&quot;)] 
 
 Have a play around. Enjoy! 
+
+
+
+P.S. If you create something that you like make sure you download it (click the pointy up menu arrow in the bottom left corner and select &#39;Publish to file&#39;). This will download your Twine story as an HTML file which you can then either re-upload to work on more later, or share with the world via a github page such as the one that&#39;s hosting this story. 
+
+&lt;img src = &quot;https://live.staticflickr.com/65535/50668902823_574c265ddc_z.jpg&quot;&gt;
 
 </tw-passagedata><tw-passagedata pid="27" name="pos1.1" tags="positivism" position="3339,347" size="100,100">(set: $field to 1)You ask one of the people (if: $posround is 1)[to remind you ]what&#39;s going on. 
 
@@ -784,13 +790,13 @@ This makes total sense to me and I am sold.
 
 [[However, I&#39;m still gonna go and have a look at these other fields - see what they&#39;ve got going on -&gt;Take a look around]] 
 
-[[And you know what - I&#39;m done. I am a postivist, get me out of here-&gt;posending]]</tw-passagedata><tw-passagedata pid="35" name="And it&#39;s got it&#39;s strong points" tags="positivism" position="3248,657" size="100,100">I&#39;m just not quite sure... 
+[[And you know what - I&#39;m done. I am a postivist, get me out of here-&gt;posending]]</tw-passagedata><tw-passagedata pid="35" name="And it&#39;s got it&#39;s strong points" tags="positivism" position="3286.3333333333335,685.3333333333334" size="100,100">I&#39;m just not quite sure... 
 
 &lt;div style=&quot;width:100%;height:0;padding-bottom:67%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/3oEduUXLWIRdWaadRC&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 [[I&#39;m gonna go and have a look at these other fields. I might be back... -&gt;Take a look around]] 
 
-[[But you know what? The last thing I want to do is wander round another field so why not - I&#39;m yours positivism -&gt;posending2]]</tw-passagedata><tw-passagedata pid="36" name="And I don&#39;t buy it" tags="positivism" position="3306,812" size="100,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:109%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/kBWJCqn4SvswE&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+[[But you know what? The last thing I want to do is wander round another field so why not - I&#39;m yours positivism -&gt;posending2]]</tw-passagedata><tw-passagedata pid="36" name="And I don&#39;t buy it" tags="positivism" position="3309.3333333333335,810.3333333333334" size="100,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:109%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/kBWJCqn4SvswE&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 Thanks for the tour but [[this field is not for me! -&gt;Take a look around]] </tw-passagedata><tw-passagedata pid="37" name="posending" tags="positivism" position="3703,131" size="100,100">Welcome, we&#39;re happy to have you! Go forth fellow scientist, find those p-values, the bigger the better. May your p-values be  //enormous//! 
 
@@ -869,7 +875,7 @@ Thanks for the tour but [[this field is not for me! -&gt;Take a look around]] </
 |more3)[ ] 
 |more1)[{(live: 1s)[(replace: ?more2)+(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Neucha&quot;)[We study the social world, not natural science. Find me an objective truth in the social world]]
 	(stop:)}]
-|more1)[{(live: 4s)[(replace: ?more3)[Alright, teaching anglophone childern to read English. Lots of studies show that using phonics rather than they whole word system produces kids who are better readers. (link-reveal:&quot;There&#39;s an &#39;objective truth&#39;!&quot;)[(show: ?more4)]]] (stop:)}]
+|more1)[{(live: 4s)[(replace: ?more3)[Alright, teaching anglophone childern to read English. Lots of studies show that using phonics rather than the whole word system produces kids who are better readers. (link-reveal:&quot;There&#39;s an &#39;objective truth&#39;!&quot;)[(show: ?more4)]]] (stop:)}]
 |more4)[(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Neucha&quot;)[**Ok, and that&#39;s great. But what is that research actually telling us?**]]
 |more4)[(align:&quot;=&gt;&lt;==&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family: Quattrocento&quot;)[**The kids might be &#39;better&#39; readers but it doesn&#39;t tell us //how// or //why//.**]]
 |more4)[(align:&quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(249, 231, 159)&quot;)+(css:&quot;font-family:Nunito&quot;)[**(And //is// it even telling us that? Think of all the variables in a classroom - could you //really// isolate out everything else?)**]]
@@ -895,10 +901,10 @@ Now the researchers seem bothered.
 
 [[And I&#39;m not sure, I&#39;ve a couple more questions]]
 
-[[And nope, I am not into this]]</tw-passagedata><tw-passagedata pid="46" name="And now that I have it just makes so much sense!" tags="constructivism" position="3238,1062" size="100,100">&lt;div style=&quot;width:70%;height:0;padding-bottom:70%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/2wW672rnFNOJiB2FES&quot; width=&quot;70%&quot; height=&quot;70%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+[[And nope, I am not into this]]</tw-passagedata><tw-passagedata pid="46" name="And now that I have it just makes so much sense!" tags="constructivism" position="3246.3333333333335,1052" size="100,100">&lt;div style=&quot;width:70%;height:0;padding-bottom:70%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/2wW672rnFNOJiB2FES&quot; width=&quot;70%&quot; height=&quot;70%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 [[However, since I am so interested in multiple perspectives I&#39;m gonna keep looking around but keep a seat warm for me! -&gt;Take a look around]] 
 
-[[This is it, this is me, I&#39;m staying! I have found my field and my path - now take me home -&gt;constending]]</tw-passagedata><tw-passagedata pid="47" name="And I&#39;m not sure, I&#39;ve a couple more questions" tags="constructivism" position="3229,1350" size="100,100">(if: $questions is 1)[
+[[This is it, this is me, I&#39;m staying! I have found my field and my path - now take me home -&gt;constending1]]</tw-passagedata><tw-passagedata pid="47" name="And I&#39;m not sure, I&#39;ve a couple more questions" tags="constructivism" position="3229,1350" size="100,100">(if: $questions is 1)[
 (if: $journalism is 0)[ [[Are you not just kinda making it all up?-&gt;Journalism]] 
 ]
 (if: $anyuse is 0)[ [[How //useful// is any of this really?-&gt;anyuse]] 
@@ -913,18 +919,20 @@ Now the researchers seem bothered.
 </tw-passagedata><tw-passagedata pid="48" name="And nope, I am not into this" tags="constructivism" position="3226,1205" size="100,100">&lt;img src =&quot;https://i.imgur.com/Z8udRUi.gif&quot;&gt;
 
 
-Thanks for telling me about what you&#39;re up to here but take me back to the fence - [[this field is not for me! -&gt;Take a look around]] </tw-passagedata><tw-passagedata pid="49" name="constending" tags="constructivism" position="3909,886" size="200,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:66%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/ucZCkupEZ2xoZ8kTWl&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+Thanks for telling me about what you&#39;re up to here but take me back to the fence - [[this field is not for me! -&gt;Take a look around]] </tw-passagedata><tw-passagedata pid="49" name="constending" tags="constructivism" position="4050.6666666666665,832.6666666666666" size="200,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:67%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/m9WoBXlZKj0ojbMcEa&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
-The end (click:&quot;The end&quot;)[(reload:)]</tw-passagedata><tw-passagedata pid="50" name="parachute" tags="" position="1885.6666666666667,1324.6666666666665" size="100,100">https://www.bmj.com/content/327/7429/1459
-
-
-</tw-passagedata><tw-passagedata pid="51" name="code arcade" tags="" position="1880.6666666666667,1161.3333333333333" size="100,100">&lt;div style=&quot;position:relative;height:0;padding-bottom:117.6%;overflow:hidden;&quot;&gt;&lt;iframe style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; src=&quot;https://arcade.makecode.com/---run?id=_bcmWYua3PX1q&quot; allowfullscreen=&quot;allowfullscreen&quot; sandbox=&quot;allow-popups allow-forms allow-scripts allow-same-origin&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="52" name="crittheory1.1" tags="crittheory" position="3104,1507.6666666666667" size="100,100">Double-click to edit
+The end (click:&quot;The end&quot;)[(reload:)]</tw-passagedata><tw-passagedata pid="50" name="parachute" tags="" position="1939.0000000000002,1297.9999999999998" size="100,100">https://www.bmj.com/content/327/7429/1459
 
 
-[[Back to the fence -&gt;Take a look around]]</tw-passagedata><tw-passagedata pid="53" name="crittheory ending" tags="crittheory" position="3302.666666666667,1838.3333333333333" size="200,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:66%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/ucZCkupEZ2xoZ8kTWl&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+</tw-passagedata><tw-passagedata pid="51" name="code arcade" tags="" position="1934.0000000000002,1134.6666666666665" size="100,100">&lt;div style=&quot;position:relative;height:0;padding-bottom:117.6%;overflow:hidden;&quot;&gt;&lt;iframe style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; src=&quot;https://arcade.makecode.com/---run?id=_bcmWYua3PX1q&quot; allowfullscreen=&quot;allowfullscreen&quot; sandbox=&quot;allow-popups allow-forms allow-scripts allow-same-origin&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;</tw-passagedata><tw-passagedata pid="52" name="crittheory1.1" tags="crittheory" position="3032.3333333333344,1761.0000000000002" size="100,100">You look around for someone to talk to. All the people are off near the edges of the field but there&#39;s a cow standing watching you and chewing.
+
+&lt;div style=&quot;width:80%;height:0;padding-bottom:80%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/PQR35jBsAEVPxSMkYj&quot; width=&quot;80%&quot; height=&quot;80%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+[[Say hello to the cow 🐮-&gt;crittheory1.2]]
+
+[[Ugh, there&#39;s no one to talk to - I&#39;m off back to the fence -&gt;Take a look around]]</tw-passagedata><tw-passagedata pid="53" name="crittheory ending" tags="crittheory" position="3199.3333333333335,1921.6666666666667" size="200,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:67%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/m9WoBXlZKj0ojbMcEa&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 The end (click:&quot;The end&quot;)[(reload:)]
-</tw-passagedata><tw-passagedata pid="54" name="Untitled Passage 7" tags="" position="2748,1314.6666666666667" size="100,100">How do inherent power structures affect peoples&#39; realities? 
+</tw-passagedata><tw-passagedata pid="54" name="Untitled Passage 7" tags="" position="3479.666666666667,1609.6666666666667" size="100,100">How do inherent power structures affect peoples&#39; realities? 
 
 Research -&gt; leading to awareness -&gt; transformation 
 
@@ -936,7 +944,7 @@ Making structures of domination visible
 
 
 
-[[Ah, ok then-&gt;And I&#39;m not sure, I&#39;ve a couple more questions]] </tw-passagedata><tw-passagedata pid="56" name="fem1.1" tags="feminism" position="2650.666666666667,1473.9999999999998" size="100,100">You go and join the nearest group of people. 
+[[Ah, ok then-&gt;And I&#39;m not sure, I&#39;ve a couple more questions]] </tw-passagedata><tw-passagedata pid="56" name="fem1.1" tags="feminism" position="2497.3333333333335,1568.9999999999998" size="100,100">You go and join the nearest group of people. 
 
 Let&#39;s do this! (link-reveal:&quot;Who are you folks and what&#39;s happening here?&quot;)[(show: ?more1)] 
 
@@ -950,14 +958,14 @@ Let&#39;s do this! (link-reveal:&quot;Who are you folks and what&#39;s happening
 &lt;div style=&quot;width:100%;height:0;padding-bottom:56%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/3oz8xHNT6pZaqj7Xqg&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 [[So the research you&#39;re doing is all about yourselves?-&gt;fem1.2]]]
-</tw-passagedata><tw-passagedata pid="57" name="femending" tags="feminism" position="2604.3333333333335,1933.6666666666672" size="100,100">(align:&quot;==&gt;&lt;=&quot;)[Hello! We&#39;re thrilled that you&#39;re here 😊]
+</tw-passagedata><tw-passagedata pid="57" name="femending" tags="feminism" position="2472.666666666667,1988.6666666666672" size="100,100">(align:&quot;==&gt;&lt;=&quot;)[Hello! We&#39;re thrilled that you&#39;re here 😊]
 &lt;div style=&quot;width:100%;height:0;padding-bottom:45%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/fU4elxKlRsulB4Jy7w&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 (align:&quot;==&gt;&lt;=&quot;)[Go forth and research, firm in your comittment to social justice and clear-eyed in your own subjectivity.
 And finally...]
 
 (event: when time &gt; 2s)[[[Yes?!? -&gt;femending final]] 
 
-(Eh, thanks for the welcome and all but before we get to the ending screen [[there&#39;s just one last wee thing I&#39;d like to say ...-&gt;Untitled Passage 4]])]</tw-passagedata><tw-passagedata pid="58" name="fem1.2" tags="feminism" position="2667.6666666666665,1740.3333333333333" size="100,100">(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(234, 250, 241)&quot;)+(css:&quot;font-family: Mate&quot;)[Not really. What we want to know about is power - who has lots and who doesn&#39;t have as much; why this is the case and how things could be changed.]
+(Eh, thanks for the welcome and all but before we get to the ending screen [[there&#39;s just one last wee thing I&#39;d like to say ...-&gt;Untitled Passage 4]])]</tw-passagedata><tw-passagedata pid="58" name="fem1.2" tags="feminism" position="2504.333333333333,1756.9999999999998" size="100,100">(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(234, 250, 241)&quot;)+(css:&quot;font-family: Mate&quot;)[Not really. What we want to know about is power - who has it and who doesn&#39;t have as much; why this is the case and how things could be changed.]
 
 |more1&gt;[]
 |more2&gt;[]
@@ -974,7 +982,7 @@ We&#39;re interested in questions like how do you disrupt the replication of the
 
 [[Dunno but neither of the above! -&gt;Ans3]]]
 (live: 3s)[(replace: ?more1)[That sounds like a great aim for research, looking at power structures.](stop:)]
-(live: 5s)[(replace: ?more2)[(link-reveal:&quot;I&#39;ve always thought good research should be able to change things.&quot;)[(show: ?more3)] ] (stop:)]</tw-passagedata><tw-passagedata pid="59" name="fem1.3" tags="feminism" position="2144.3333333333326,1896.999999999999" size="100,100">{(live: 1s)[
+(live: 5s)[(replace: ?more2)[(link-reveal:&quot;I&#39;ve always thought good research should be able to change things.&quot;)[(show: ?more3)] ] (stop:)]</tw-passagedata><tw-passagedata pid="59" name="fem1.3" tags="feminism" position="2094.3333333333326,1890.3333333333323" size="100,100">{(live: 1s)[
 	(replace: ?more5)+(transition: &quot;dissolve&quot;)+(transition-time: 4s)+(css: &quot;font-size: 140%;&quot;)+(align: &quot;=&gt;&lt;=&quot;)+(css: &quot;color:rgb(234, 250, 241)&quot;)+(css:&quot;font-family: Mate&quot;)[**You start by //not replicating them yourself//!**](stop:)]
 	}	
 |more5)[ ]
@@ -984,13 +992,13 @@ We&#39;re interested in questions like how do you disrupt the replication of the
 |more1)[(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(234, 250, 241)&quot;)+(css:&quot;font-family: Neucha&quot;)[All of us are located within systems of power. The roles we play and the social identities we adopt or have ascribed to us are part of this. That&#39;s why understanding who you are and your own subjectivity is so important - typically in the research process a researcher is located in a position of power relative to the participants. Going in, if you&#39;re not critically aware of your own baggage, biases and assumptions you increase the risk that your work will simply reproduce established narratives.]
 (link-reveal:&quot;Oh...&quot;)[(show: ?more2)]]
 |more2)[(link-reveal:&quot;That&#39;s quite a framework&quot;)[(show: ?more3)]]
-|more3)[ [[So, does this mean that it&#39;s not really //what// you research that matters but //how// you do it?-&gt;fem1.4]] ]</tw-passagedata><tw-passagedata pid="60" name="Ans1" tags="feminism" position="2422.6666666666674,1673.6666666666663" size="100,100">Fair enough, but that&#39;s a pretty mammoth task. All the variables that make up the status quo? That&#39;s a lot to look at.
+|more3)[ [[So, does this mean that it&#39;s not really //what// you research that matters but //how// you do it?-&gt;fem1.4]] ]</tw-passagedata><tw-passagedata pid="60" name="Ans1" tags="feminism" position="2322.6666666666674,1671.9999999999995" size="100,100">Fair enough, but that&#39;s a pretty mammoth task. All the variables that make up the status quo? That&#39;s a lot to look at.
 
 Understanding how and why things are the way they are is important, but for us the key thing to start with when looking at ways of disrupting oppressive social structures is...
 
-[[Yes?!?-&gt;fem1.3]] </tw-passagedata><tw-passagedata pid="61" name="Ans2" tags="feminism" position="2424.3333333333335,1805.333333333333" size="100,100">Yep, the perspectives of the people you&#39;re researching with are key, but if you&#39;re looking at ways of disrupting oppressive social structures there&#39;s something you neew to start with, even before that. 
+[[Yes?!?-&gt;fem1.3]] </tw-passagedata><tw-passagedata pid="61" name="Ans2" tags="feminism" position="2324.3333333333335,1803.6666666666663" size="100,100">Yep, the perspectives of the people you&#39;re researching with are key, but if you&#39;re looking at ways of disrupting oppressive social structures there&#39;s something you need to start with, even before that. 
 
-[[Yes?!?-&gt;fem1.3]] </tw-passagedata><tw-passagedata pid="62" name="Ans3" tags="feminism" position="2424.333333333334,1940.333333333333" size="100,100">No worries, that&#39;s up to you.
+[[Yes?!?-&gt;fem1.3]] </tw-passagedata><tw-passagedata pid="62" name="Ans3" tags="feminism" position="2324.333333333334,1938.6666666666663" size="100,100">No worries, that&#39;s up to you.
 
 For us the key thing to start with when looking at ways of disrupting oppressive social structures is...
 
@@ -1019,7 +1027,7 @@ For us the key thing to start with when looking at ways of disrupting oppressive
 
 [[Yes! It is my inalienable right - please leave me to do so]]
 
-[[Ugh, fine - maybe I&#39;ll pick one-&gt;Take a look around]] </tw-passagedata><tw-passagedata pid="65" name="fem1.4" tags="feminism" position="1954.3333333333321,1741.999999999999" size="100,100">&lt;div style=&quot;width:80%;height:0;padding-bottom:60%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/ln1bbz7dG2lGz3qIWV&quot; width=&quot;80%&quot; height=&quot;80%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;|more1&gt;[]
+[[Ugh, fine - maybe I&#39;ll pick one-&gt;Take a look around]] </tw-passagedata><tw-passagedata pid="65" name="fem1.4" tags="feminism" position="1957.6666666666654,1655.3333333333323" size="100,100">&lt;div style=&quot;width:80%;height:0;padding-bottom:60%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/ln1bbz7dG2lGz3qIWV&quot; width=&quot;80%&quot; height=&quot;80%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;|more1&gt;[]
 |more2&gt;[]
 |more3&gt;[]
 |more4&gt;[]
@@ -1049,7 +1057,7 @@ For us the key thing to start with when looking at ways of disrupting oppressive
 
 (link-replace:&quot;And there&#39;s something here, I just need to think about it some more&quot;)[[[I&#39;m gonna go, maybe see you later -&gt;Take a look around]] ]
 
-(link-replace:&quot;And nope, I may or may not be a feminist but I am not a feminist researcher!&quot;)[[[Back to the other fields!-&gt;Take a look around]] ]</tw-passagedata><tw-passagedata pid="67" name="And this is it! I&#39;ve found my gang!" tags="feminism" position="2240.999999999999,1503.6666666666654" size="100,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:56%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/5D7DStqhbymFW&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+(link-replace:&quot;And nope, I may or may not be a feminist but I am not a feminist researcher!&quot;)[[[Back to the other fields!-&gt;Take a look around]] ]</tw-passagedata><tw-passagedata pid="67" name="And this is it! I&#39;ve found my gang!" tags="feminism" position="2272.6666666666656,1488.6666666666654" size="100,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:56%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/5D7DStqhbymFW&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 [[This is what a feminist (researcher) looks like - take me home! -&gt;femending]]
 
@@ -1057,9 +1065,10 @@ For us the key thing to start with when looking at ways of disrupting oppressive
 
 &lt;div style=&quot;width:100%;height:0;padding-bottom:56%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/bDSP5Pz1NX0wXWZqsU&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
-But while you&#39;re sitting there unconfortably [[consider this...-&gt;last screen]]</tw-passagedata><tw-passagedata pid="69" name="last screen" tags="body" position="1855.0000000000002,956.6666666666663" size="200,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:66%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/ucZCkupEZ2xoZ8kTWl&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+But while you&#39;re sitting there unconfortably [[consider this...-&gt;last screen]]</tw-passagedata><tw-passagedata pid="69" name="last screen" tags="body" position="1855.0000000000002,956.6666666666663" size="200,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:67%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/m9WoBXlZKj0ojbMcEa&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
-The end (click:&quot;The end&quot;)[(reload:)]</tw-passagedata><tw-passagedata pid="70" name="poslastscreen" tags="positivism" position="4058,102.66666666666664" size="200,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:66%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/ucZCkupEZ2xoZ8kTWl&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+The end (click:&quot;The end&quot;)[(reload:)]
+</tw-passagedata><tw-passagedata pid="70" name="poslastscreen" tags="positivism" position="4058,102.66666666666664" size="200,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:67%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/m9WoBXlZKj0ojbMcEa&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 The end (click:&quot;The end&quot;)[(reload:)]
 </tw-passagedata><tw-passagedata pid="71" name="posending2.2" tags="positivism" position="3924,222.66666666666666" size="100,100">In that case...
@@ -1072,7 +1081,7 @@ By carrying out  research scientifically, using a control group to ensure that o
 This is the kind of knowledge that we need to make informed decisions! **]
 
 [[Wow, yeah. That does sound useful-&gt;pos1.2]]]
-</tw-passagedata><tw-passagedata pid="73" name="femending1.2" tags="" position="2530.666666666666,2327.6666666666674" size="100,100">|more1)[ ]
+</tw-passagedata><tw-passagedata pid="73" name="femending1.2" tags="" position="2490.666666666666,2387.6666666666674" size="100,100">|more1)[ ]
 
 |more2)[ ]
 
@@ -1086,9 +1095,32 @@ This is the kind of knowledge that we need to make informed decisions! **]
 (live: 5s)[
 	(replace: ?more2)[[[Well, it&#39;s not very emancipatory is it? Where&#39;s my self-determination? My agency?-&gt;femending2]]]
 	(stop:)]
-}</tw-passagedata><tw-passagedata pid="74" name="femending final" tags="feminism" position="2825,1948.6666666666672" size="200,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:66%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/ucZCkupEZ2xoZ8kTWl&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+}</tw-passagedata><tw-passagedata pid="74" name="femending final" tags="feminism" position="2656.6666666666665,2062.0000000000005" size="200,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:67%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/m9WoBXlZKj0ojbMcEa&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 The end (click:&quot;The end&quot;)[(reload:)]
+</tw-passagedata><tw-passagedata pid="75" name="constending1" tags="constructivism" position="3864.333333333334,825.3333333333334" size="100,100">We&#39;re delighted to have you with us! 
+
+&lt;div style=&quot;width:100%;height:0;padding-bottom:67%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/3oz8xRF0v9WMAUVLNK&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
+Go forth and explore multiple realities where no social scientist has gone before. Follow your path with authenticity, seeking truthfulness that makes your participants tear up and say: &quot;Aw, you just so get me!&quot;   
+
+[[And as you do so...-&gt;constending]]</tw-passagedata><tw-passagedata pid="76" name="crittheory1.2" tags="crittheory" position="2852.333333333334,1691" size="100,100">Slightly to your surprise the cow replies. 
+
+|more2)[ ]
+|more3)[ ]
+
+|more5&gt;[]
+
+|more6)[(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(234, 250, 241)&quot;)+(css:&quot;font-family: Balsamiq Sans&quot;)[Your idea, your theory. They&#39;re thinkers you see. All looking for the next big idea.]]
+
+{(live: 2s)[
+	(replace: ?more2)[(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(234, 250, 241)&quot;)+(css:&quot;font-family: Balsamiq Sans&quot;)[Hello to you too.]]
+	(stop:)]
+(live: 3s)[
+	(replace: ?more3)[(align:&quot;==&gt;&lt;=&quot;)+(css: &quot;color:rgb(234, 250, 241)&quot;)+(css:&quot;font-family: Balsamiq Sans&quot;)[So, what&#39;s your big idea then?]]
+	(stop:)]
+(live: 6s)[
+	(replace: ?more5)[(link-reveal:&quot;My what?&quot;)[(show: ?more6)]]
+	(stop:)]}</tw-passagedata><tw-passagedata pid="77" name="Untitled Passage 3" tags="" position="3493.333333333334,1836.6666666666667" size="100,100">&lt;div style=&quot;width:100%;height:0;padding-bottom:75%;position:relative;&quot;&gt;&lt;iframe src=&quot;https://giphy.com/embed/eITfsH4wegT8WXEvAJ&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute&quot; frameBorder=&quot;0&quot; class=&quot;giphy-embed&quot; allowFullScreen&gt;&lt;/iframe&gt;&lt;/div&gt;
 </tw-passagedata></tw-storydata>
 
 <script title="Twine engine code" data-main="harlowe">"use strict";function _defineProperty(e,t,n){return t in e?Object.defineProperty(e,t,{value:n,enumerable:!0,configurable:!0,writable:!0}):e[t]=n,e}function _toConsumableArray(e){if(Array.isArray(e)){for(var t=0,n=Array(e.length);t<e.length;t++)n[t]=e[t];return n}return Array.from(e)}var _slicedToArray=function(){function e(e,t){var n=[],r=!0,i=!1,o=void 0;try{for(var a,s=e[Symbol.iterator]();!(r=(a=s.next()).done)&&(n.push(a.value),!t||n.length!==t);r=!0);}catch(e){i=!0,o=e}finally{try{!r&&s.return&&s.return()}finally{if(i)throw o}}return n}return function(t,n){if(Array.isArray(t))return t;if(Symbol.iterator in Object(t))return e(t,n);throw new TypeError("Invalid attempt to destructure non-iterable instance")}}(),_typeof="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e};!function(){/**
